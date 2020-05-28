@@ -1,0 +1,45 @@
+.homepage {
+  position: relative;
+  text-align: center;
+  color: '#33475b';
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Button {
+  background-color: '#f57958';
+}
+
+.home-text {
+  position: absolute;
+  bottom: 1500px;
+  right: 180px;
+  text-align: left;
+  margin-right: 800px;
+  margin-left: 50px;
+}
+
+.growth {
+  padding: 60px;
+}
+.growth-logo-wrapper {
+  width: 25px;
+}
+
+.col-4 {
+  background-color: '#f5f8fa';
+}
+.community-board {
+  padding: 80px;
+}
+
+.com-board-text {
+  margin-bottom: 30px;
+}
+.community-board {
+  background-color: #47b8aa;
+  color: #ffffff;
+  height: 650px;
+}
+.community-board-inner {
+  margin-top: 20px;
+}
