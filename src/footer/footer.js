@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import './footer.css';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faTwitter,
+  faGoogle,
+  faLinkedin,
+  faCheckCircle,
+  faFacebook,
+} from '@fortawesome/free-solid-svg-icons';
 
 class Footer extends Component {
   render() {
@@ -97,22 +105,22 @@ class Footer extends Component {
                 <ul className="list-unstyled list-inline">
                   <li className="list-inline-item">
                     <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i className="fab fa-twitter" />
+                      <FontAwesomeIcon />{' '}
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i className="fab fa-twitter" />
+                      <FontAwesomeIcon />{' '}
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i className="fab fa-google-plus-g" />
+                      <FontAwesomeIcon />{' '}
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i className="fab fa-linkedin-in" />
+                      <FontAwesomeIcon />{' '}
                     </a>
                   </li>
                 </ul>

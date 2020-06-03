@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col, Button, Card, Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDotCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+
 import './homepage.css';
 
 class Home extends Component {
@@ -14,11 +17,27 @@ class Home extends Component {
               height: '100px',
             }}
           >
-            <p style={{ padding: '20px' }}>
-              Global health and safety is our top priority. Learn how HubSpot is
-              responding to COVID-19 and its economic impact on the communities
-              we serve.
-            </p>
+            <div className="container">
+              <div className="row" style={{ height: '90vh', resize: 'both' }}>
+                <div className="col-sm-12 col-md-12">
+                  <p
+                    style={{
+                      padding: '20px',
+                      fontWeight: 'bold',
+                      fontSize: '20px',
+                    }}
+                  >
+                    Global health and safety is our top priority.
+                    <a href="https://www.hubspot.com/en-us/coronavirus-response">
+                      {' '}
+                      <u>Learn how HubSpot is responding</u>
+                    </a>{' '}
+                    to COVID-19 and its economic impact on the communities we
+                    serve.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <img
             src="https://cdn2.hubspot.net/hubfs/53/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg"
@@ -50,8 +69,10 @@ class Home extends Component {
           <div className="growth" style={{ backgroundColor: '#f5f8fa' }}>
             <div className="growth-products container">
               <div className="row">
-                <div className="growth-logo-wrapper col-4">
-                  <h2>Powerful alone. Better together.</h2>
+                <div className="growth-logo-wrapper col-12 col-sm-3 col-md-3">
+                  <h2 style={{ fontWeight: 'bold', marginBottom: '30px' }}>
+                    Powerful alone. Better together.
+                  </h2>
                   <p>
                     HubSpot offers a full stack of software for marketing,
                     sales, and customer service, with a completely free CRM at
@@ -59,44 +80,125 @@ class Home extends Component {
                     together.
                   </p>
                 </div>
-                <Card style={{ width: '18rem' }} className="col-4">
+                <Card
+                  style={{ width: '18rem' }}
+                  className="col-12 col-sm-3 col-md-3 offset-md-1"
+                >
                   <Card.Body>
-                    <Card.Title>Free HubSpot CRM</Card.Title>
-                    <Card.Text>
+                    <Card.Title
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      <FontAwesomeIcon
+                        icon={faDotCircle}
+                        style={{ marginRight: '10px' }}
+                      />
+                      Free HubSpot CRM
+                    </Card.Title>
+                    <Card.Text style={{ textAlign: 'left' }}>
                       Everything you need to organize, track, and build better
                       relationships with leads and customers. Yes, it's 100%
                       free. Forever.
                     </Card.Text>
-                    <Card.Subtitle>POPULAR FEATURES</Card.Subtitle>
-                    <ul>
-                      <li>contact Insights</li>
-                      <li>Deals</li>
-                      <li>Tasks</li>
+                    <hr />
+                    <Card.Subtitle
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      POPULAR FEATURES
+                    </Card.Subtitle>
+                    <ul style={{ textAlign: 'left', listStyle: 'none' }}>
+                      <li>
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        contact Insights
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Deals
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Tasks
+                      </li>
                     </ul>
                     <Button
-                      style={{ backgroundColor: '#f57958', border: 'none' }}
+                      style={{
+                        textAlign: 'center',
+                        backgroundColor: '#f57958',
+                        border: 'none',
+                      }}
                       variant="danger"
                     >
                       Go somewhere
                     </Button>
                   </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem' }} className="col-4">
+                <Card
+                  style={{ width: '18rem' }}
+                  className="col-12 col-sm-3 col-md-3 offset-md-1"
+                >
                   <Card.Body>
-                    <Card.Title>Free HubSpot CRM</Card.Title>
-                    <Card.Text>
+                    <Card.Title
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      {' '}
+                      <FontAwesomeIcon
+                        icon={faDotCircle}
+                        style={{ marginRight: '10px' }}
+                      />
+                      Free HubSpot CRM
+                    </Card.Title>
+                    <Card.Text style={{ textAlign: 'left' }}>
                       Everything you need to organize, track, and build better
                       relationships with leads and customers. Yes, it's 100%
                       free. Forever.
                     </Card.Text>
-                    <Card.Subtitle>POPULAR FEATURES</Card.Subtitle>
-                    <ul>
-                      <li>contact Insights</li>
-                      <li>Deals</li>
-                      <li>Tasks</li>
+                    <hr />
+                    <Card.Subtitle
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      POPULAR FEATURES
+                    </Card.Subtitle>
+                    <ul style={{ textAlign: 'left', listStyle: 'none' }}>
+                      <li>
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        contact Insights
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Deals
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Tasks
+                      </li>
                     </ul>
                     <Button
-                      style={{ backgroundColor: '#f57958', border: 'none' }}
+                      style={{
+                        textAlign: 'center',
+                        backgroundColor: '#f57958',
+                        border: 'none',
+                      }}
                       variant="danger"
                     >
                       Go somewhere
@@ -104,67 +206,190 @@ class Home extends Component {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="row">
-                <Card style={{ width: '18rem' }} className="col-4">
+              <div className="row" style={{ marginTop: '30px' }}>
+                <Card
+                  style={{ width: '18rem' }}
+                  className="col-12 col-sm-3 col-md-3"
+                >
                   <Card.Body>
-                    <Card.Title>Free HubSpot CRM</Card.Title>
-                    <Card.Text>
+                    <Card.Title
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      {' '}
+                      <FontAwesomeIcon
+                        icon={faDotCircle}
+                        style={{ marginRight: '10px' }}
+                      />
+                      Free HubSpot CRM
+                    </Card.Title>
+                    <Card.Text style={{ textAlign: 'left' }}>
                       Everything you need to organize, track, and build better
                       relationships with leads and customers. Yes, it's 100%
                       free. Forever.
                     </Card.Text>
-                    <Card.Subtitle>POPULAR FEATURES</Card.Subtitle>
-                    <ul>
-                      <li>contact Insights</li>
-                      <li>Deals</li>
-                      <li>Tasks</li>
+                    <hr />
+                    <Card.Subtitle
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      POPULAR FEATURES
+                    </Card.Subtitle>
+                    <ul style={{ textAlign: 'left', listStyle: 'none' }}>
+                      <li>
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        contact Insights
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Deals
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Tasks
+                      </li>
                     </ul>
                     <Button
-                      style={{ backgroundColor: '#f57958', border: 'none' }}
+                      style={{
+                        textAlign: 'center',
+                        backgroundColor: '#f57958',
+                        border: 'none',
+                      }}
                       variant="danger"
                     >
                       Go somewhere
                     </Button>
                   </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem' }} className="col-4">
+                <Card
+                  style={{ width: '18rem' }}
+                  className="col-12 col-sm col-md-3 offset-md-1"
+                >
                   <Card.Body>
-                    <Card.Title>Free HubSpot CRM</Card.Title>
-                    <Card.Text>
+                    <Card.Title
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      {' '}
+                      <FontAwesomeIcon
+                        icon={faDotCircle}
+                        style={{ marginRight: '10px' }}
+                      />
+                      Free HubSpot CRM
+                    </Card.Title>
+                    <Card.Text style={{ textAlign: 'left' }}>
                       Everything you need to organize, track, and build better
                       relationships with leads and customers. Yes, it's 100%
                       free. Forever.
                     </Card.Text>
-                    <Card.Subtitle>POPULAR FEATURES</Card.Subtitle>
-                    <ul>
-                      <li>contact Insights</li>
-                      <li>Deals</li>
-                      <li>Tasks</li>
+                    <hr />
+                    <Card.Subtitle
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      POPULAR FEATURES
+                    </Card.Subtitle>
+                    <ul style={{ textAlign: 'left', listStyle: 'none' }}>
+                      <li>
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        contact Insights
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Deals
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Tasks
+                      </li>
                     </ul>
                     <Button
-                      style={{ backgroundColor: '#f57958', border: 'none' }}
+                      style={{
+                        textAlign: 'center',
+                        backgroundColor: '#f57958',
+                        border: 'none',
+                      }}
                       variant="danger"
                     >
                       Go somewhere
                     </Button>
                   </Card.Body>
                 </Card>
-                <Card style={{ width: '18rem' }} className="col-4">
+                <Card
+                  style={{ width: '18rem' }}
+                  className="col-12 col-sm-3 col-md-3 offset-md-1"
+                >
                   <Card.Body>
-                    <Card.Title>Free HubSpot CRM</Card.Title>
-                    <Card.Text>
+                    <Card.Title
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      {' '}
+                      <FontAwesomeIcon
+                        icon={faDotCircle}
+                        style={{ marginRight: '10px' }}
+                      />
+                      Free HubSpot CRM
+                    </Card.Title>
+                    <Card.Text style={{ textAlign: 'left' }}>
                       Everything you need to organize, track, and build better
                       relationships with leads and customers. Yes, it's 100%
                       free. Forever.
                     </Card.Text>
-                    <Card.Subtitle>POPULAR FEATURES</Card.Subtitle>
-                    <ul>
-                      <li>contact Insights</li>
-                      <li>Deals</li>
-                      <li>Tasks</li>
+                    <hr />
+                    <Card.Subtitle
+                      style={{ textAlign: 'left', fontWeight: 'bold' }}
+                    >
+                      POPULAR FEATURES
+                    </Card.Subtitle>
+                    <ul style={{ textAlign: 'left', listStyle: 'none' }}>
+                      <li>
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        contact Insights
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Deals
+                      </li>
+                      <li>
+                        {' '}
+                        <FontAwesomeIcon
+                          icon={faCheckCircle}
+                          style={{ marginRight: '10px', color: '#f86' }}
+                        />
+                        Tasks
+                      </li>
                     </ul>
                     <Button
-                      style={{ backgroundColor: '#f57958', border: 'none' }}
+                      style={{
+                        textAlign: 'center',
+                        backgroundColor: '#f57958',
+                        border: 'none',
+                      }}
                       variant="danger"
                     >
                       Go somewhere
